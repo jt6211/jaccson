@@ -134,3 +134,10 @@ Note that this design means that it is possible to stream lots of documents over
 ### Drivers
 Rather than implement drivers in various languages, as Mongo has done, non JVM language support is planned to be provided via a thrift proxy. Mongo users are accustomed to running separate client-side mongos processes to connect to sharded instances, and so shouldn't have any problem with having to run a proxy. This is only required for non JVM languages however, and Java, Scala, Jython, JRuby, Groovy, Clojure, etc should be able to use the Java client library.
 
+### Building
+
+
+    mvn compile package
+    
+
+
